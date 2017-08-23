@@ -43,7 +43,7 @@
 
 (defun v-cross (a b)
   (declare (type (simple-vector 3) a b))
-  (let+ ((#(x1 x2 x3) a)
+  (let-plus::let+ ((#(x1 x2 x3) a)
          (#(y1 y2 y3) b))
     (v3 (- (* x2 y3) (* x3 y2))
         (- (* x3 y1) (* x1 y3))
